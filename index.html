@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Telemetry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-default">
+  <div id="fx" aria-hidden="true"></div>
+
+  <main class="app">
+    <header class="top">
+      <h1 class="brand">Weather Telemetry</h1>
+      <div class="units" role="group" aria-label="Units">
+        <button type="button" id="unit-metric" data-unit="metric">°C</button>
+        <button type="button" id="unit-imperial" data-unit="imperial">°F</button>
+      </div>
+    </header>
+
+    <form id="search-form" class="search" autocomplete="off" role="search">
+      <div class="field">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="city-input" type="text" placeholder="Search any city, town or village" aria-label="Search for a place"
+               role="combobox" aria-expanded="false" aria-controls="suggestions" aria-autocomplete="list" required>
+        <ul id="suggestions" class="suggestions hidden" role="listbox"></ul>
+      </div>
+      <button type="button" id="locate" class="icon-btn" aria-label="Use my location" title="Use my location">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+      </button>
+      <button type="submit" class="go">Search</button>
+    </form>
+
+    <div id="recent" class="chips" aria-label="Recent searches"></div>
+
+    <div id="loader" class="loader hidden" role="status" aria-label="Loading weather"></div>
+    <p id="error" class="error hidden" role="alert"></p>
+
+    <section id="empty" class="empty">
+      <h2>Where to?</h2>
+      <p>Search any place in the world, down to small towns and villages. Add a state or country code if the name is common, like “Springfield, IL”.</p>
+      <div class="chips" id="quick"></div>
+    </section>
+
+    <section id="weather" class="hidden">
+      <div class="grid">
+        <article class="card hero">
+          <div class="hero-text">
+            <h2 id="city-name"></h2>
+            <p id="region" class="muted"></p>
+            <p id="local-time" class="muted"></p>
+            <p id="temp" class="temp"></p>
+            <p id="description" class="desc"></p>
+            <p id="hilo" class="muted"></p>
+          </div>
+          <img id="icon" class="hero-icon" alt="">
+        </article>
+
+        <div class="tiles" id="tiles"></div>
+      </div>
+
+      <h3>Next 24 hours</h3>
+      <div id="hourly" class="card hourly"></div>
+
+      <h3>5-day forecast</h3>
+      <div id="forecast" class="card days"></div>
+      <p id="updated" class="muted foot"></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
