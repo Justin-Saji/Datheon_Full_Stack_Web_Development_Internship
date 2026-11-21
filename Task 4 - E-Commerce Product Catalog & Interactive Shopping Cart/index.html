@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase | Datheon Storefront</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Shop<span>Ease</span></div>
+    <input id="searchInput" class="search" type="search" placeholder="Search products..." aria-label="Search products" />
+    <button id="cartBtn" class="cart-btn" aria-label="Open cart">
+      🛒 Cart <span id="cartBadge" class="badge-count">0</span>
+    </button>
+  </header>
+
+  <main class="container">
+    <section class="filters" id="filters">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="electronics">Electronics</button>
+      <button class="filter-btn" data-category="jewelery">Jewelry</button>
+      <button class="filter-btn" data-category="clothing">Clothing</button>
+      <select id="sortSelect" class="sort" aria-label="Sort products">
+        <option value="default">Sort: Featured</option>
+        <option value="low">Price: Low to High</option>
+        <option value="high">Price: High to Low</option>
+        <option value="rating">Top Rated</option>
+      </select>
+    </section>
+
+    <p id="status" class="status">Loading products...</p>
+    <section id="productGrid" class="product-grid"></section>
+  </main>
+
+  <!-- Cart drawer -->
+  <div id="overlay" class="overlay"></div>
+  <aside id="cartDrawer" class="drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <h2>Your Cart</h2>
+      <button id="closeCart" class="icon-btn" aria-label="Close cart">✕</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-summary">
+      <div class="row"><span>Subtotal</span><span id="subtotal">₹0</span></div>
+      <div class="row"><span>Tax (8%)</span><span id="tax">₹0</span></div>
+      <div class="row"><span>Shipping</span><span id="shipping">₹0</span></div>
+      <div class="row total"><span>Total</span><span id="total">₹0</span></div>
+      <p class="hint" id="shippingHint">Free shipping on larger orders</p>
+      <button id="checkoutBtn" class="primary-btn">Checkout</button>
+      <button id="clearCartBtn" class="link-btn">Clear cart</button>
+    </div>
+  </aside>
+
+  <!-- Checkout modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-box">
+      <div id="checkoutStep">
+        <h2>Checkout</h2>
+        <form id="checkoutForm">
+          <input name="name" placeholder="Full name" required />
+          <input name="email" type="email" placeholder="Email" required />
+          <input name="address" placeholder="Shipping address" required />
+          <p class="modal-total">Amount due: <strong id="modalTotal">₹0</strong></p>
+          <div class="modal-actions">
+            <button type="button" id="cancelCheckout" class="secondary-btn">Cancel</button>
+            <button type="submit" class="primary-btn">Place Order</button>
+          </div>
+        </form>
+      </div>
+      <div id="confirmStep" class="hidden">
+        <div class="tick">✓</div>
+        <h2>Order Confirmed!</h2>
+        <p>Thank you, <strong id="confirmName"></strong>.</p>
+        <p>Order ID: <strong id="orderId"></strong></p>
+        <p>A confirmation was (not really) sent to <span id="confirmEmail"></span>.</p>
+        <button id="doneBtn" class="primary-btn">Continue Shopping</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
