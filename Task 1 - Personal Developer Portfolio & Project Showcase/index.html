@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<<<<<<< HEAD
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justin Saji | Cybersecurity & Full-Stack Developer</title>
+    <meta name="description"
+        content="Portfolio of Justin Saji, MCA student skilled in cybersecurity, full-stack web development and no-code prototyping." />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation">
+            <a href="#home" class="logo">&lt;JS/&gt;</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark/light theme">🌙</button>
+                <button id="menu-toggle" class="icon-btn menu-btn" aria-label="Open menu" aria-expanded="false"
+                    aria-controls="nav-links">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <div class="container hero-inner">
+                <p class="eyebrow mono">Hi, my name is</p>
+                <h1>Justin Saji</h1>
+                <h2 class="hero-sub">I secure and build <span class="accent" id="typed"></span></h2>
+                <p class="hero-text">
+                    MCA student with hands-on experience in cybersecurity, full-stack web development and
+                    no-code prototyping. I build practical, user-focused and secure technology solutions.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="https://drive.google.com/file/d/1o8jT6a8EiUqNg9NnAGE6xgqsmoICTBEX/view?usp=sharing"
+                        class="btn btn-outline" target="_blank" rel="noopener" download>Download Resume</a>
+                </div>
+                <ul class="social">
+                    <li><a href="https://github.com/Justin-Saji" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/justin-saji" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="mailto:justinsaji2412@gmail.com">Email</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title reveal"><span class="mono accent">01.</span> About Me</h2>
+                <div class="about-grid reveal">
+                    <div class="about-text">
+                        <p>
+                            I'm a Master of Computer Applications student at Amal Jyothi College of Engineering,
+                            Koovappally, based in Ranni, Kerala. I enjoy the two sides of software: building
+                            interfaces people love, and finding the weaknesses attackers could exploit.
+                        </p>
+                        <p>
+                            My work spans vulnerability scanners, CVE analysis, encrypted communication and
+                            phishing detection, alongside full-stack web apps and rapid no-code prototypes.
+                            I've taken part in hackathons and innovation programmes to solve real-world problems.
+                        </p>
+                        <h3>Achievements</h3>
+                        <ul class="check-list">
+                            <li>Member of a funded project, “Innovation Ideas Unleashed” (I2U)</li>
+                            <li>Volunteer, NASA Space Apps Challenge (48-hour hybrid hackathon)</li>
+                            <li>Participant, Young Innovators Programme (YIP) by K-DISC</li>
+                            <li>Participant, Smart India Hackathon (SIH)</li>
+                        </ul>
+                    </div>
+                    <aside class="card edu">
+                        <h3>Education</h3>
+                        <div class="edu-item">
+                            <strong>MCA, Computer Applications</strong>
+                            <span>Amal Jyothi College of Engineering</span>
+                            <span class="muted">Oct 2022 – Apr 2027 · 7.0 CGPA</span>
+                        </div>
+                        <div class="edu-item">
+                            <strong>Senior Secondary (XII), Commerce</strong>
+                            <span>Little Flower Public School, Pathanamthitta</span>
+                            <span class="muted">2021 – 2022 · 83%</span>
+                        </div>
+                        <div class="edu-item">
+                            <strong>Secondary (X), CBSE</strong>
+                            <span>Little Flower Public School, Pathanamthitta</span>
+                            <span class="muted">2019 – 2022 · 73%</span>
+                        </div>
+                        <h3>Languages</h3>
+                        <p class="muted">English (Fluent) · Malayalam (Fluent) · Hindi (Intermediate)</p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section alt">
+            <div class="container">
+                <h2 class="section-title reveal"><span class="mono accent">02.</span> Tech Stack</h2>
+                <div class="skills-grid">
+                    <article class="card reveal">
+                        <h3>🎨 Frontend</h3>
+                        <div class="chips">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Angular</span><span>React</span>
+                        </div>
+                    </article>
+                    <article class="card reveal">
+                        <h3>⚙️ Backend</h3>
+                        <div class="chips"><span>Node.js</span><span>Python (Flask)</span><span>PHP</span></div>
+                    </article>
+                    <article class="card reveal">
+                        <h3>🗄️ Databases</h3>
+                        <div class="chips"><span>MySQL</span><span>MongoDB (basics)</span></div>
+                    </article>
+                    <article class="card reveal">
+                        <h3>🔐 Cybersecurity</h3>
+                        <div class="chips"><span>Vulnerability Scanning</span><span>CVE
+                                Analysis</span><span>Phishing/URL Detection</span><span>Encrypted Communication</span>
+                        </div>
+                    </article>
+                    <article class="card reveal">
+                        <h3>🧩 No-Code</h3>
+                        <div class="chips"><span>Kodular</span><span>Wix</span></div>
+                    </article>
+                    <article class="card reveal">
+                        <h3>🛠️ Tools</h3>
+                        <div class="chips"><span>Git</span><span>GitHub</span><span>Figma</span><span>Canva</span></div>
+                    </article>
+                </div>
+                <p class="soft reveal"><strong>Soft skills:</strong> Team Collaboration · Decision Making · Stress
+                    Management</p>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title reveal"><span class="mono accent">03.</span> Experience</h2>
+                <div class="timeline">
+                    <article class="timeline-item reveal">
+                        <span class="date mono">Apr 2026 – May 2026</span>
+                        <h3>Cybersecurity Intern · <span class="accent">Syntecxhub</span></h3>
+                        <ul>
+                            <li>Built a Vulnerability Scanner and a CVE Scanner to identify known weaknesses in target
+                                systems.</li>
+                            <li>Developed an Encrypted Chat Application implementing secure message transmission.</li>
+                        </ul>
+                    </article>
+                    <article class="timeline-item reveal">
+                        <span class="date mono">Jun 2026</span>
+                        <h3>Frontend Developer Trainee · <span class="accent">Nest Digital Company, Infopark</span></h3>
+                        <ul>
+                            <li>Built responsive, cross-browser websites using HTML, CSS and Angular.</li>
+                        </ul>
+                    </article>
+                    <article class="timeline-item reveal">
+                        <span class="date mono">Mar 2026 – Apr 2026</span>
+                        <h3>AI Website Developer Intern · <span class="accent">InAmigos Foundation (IAF)</span></h3>
+                        <ul>
+                            <li>Designed and deployed client websites using AI-assisted no-code tools such as Wix.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section alt">
+            <div class="container">
+                <h2 class="section-title reveal"><span class="mono accent">04.</span> Featured Projects</h2>
+                <div class="projects-grid" id="projects-grid"></div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <div class="container contact reveal">
+                <p class="eyebrow mono accent">05. What's next?</p>
+                <h2 class="section-title center">Get In Touch</h2>
+                <p class="contact-text">
+                    I'm looking for an entry-level role in cybersecurity or web development. Whether you have
+                    an opportunity or just want to say hi, my inbox is always open.
+                </p>
+                <a href="mailto:justinsaji2412@gmail.com" class="btn btn-primary">Say Hello</a>
+                <ul class="contact-list">
+                    <li>📍 Ranni, Kerala, India</li>
+                    <li>📞 <a href="tel:+917306978298">+91 73069 78298</a></li>
+                    <li>✉️ <a href="mailto:justinsaji2412@gmail.com">justinsaji2412@gmail.com</a></li>
+                    <li>💼 <a href="https://linkedin.com/in/justin-saji" target="_blank"
+                            rel="noopener">linkedin.com/in/justin-saji</a></li>
+                    <li>🐙 <a href="https://github.com/Justin-Saji" target="_blank"
+                            rel="noopener">github.com/Justin-Saji</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> Justin Saji. Built with HTML, CSS &amp; JavaScript.</p>
+    </footer>
+
+    <!-- PROJECT MODAL -->
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+        <div class="modal-box">
+            <button class="icon-btn modal-close" id="modal-close" aria-label="Close dialog">✕</button>
+            <h3 id="modal-title"></h3>
+            <div class="chips" id="modal-tags"></div>
+            <p id="modal-desc"></p>
+            <ul id="modal-points"></ul>
+            <a id="modal-link" class="btn btn-primary" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+=======
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Telemetry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-default">
+  <div id="fx" aria-hidden="true"></div>
+
+  <main class="app">
+    <header class="top">
+      <h1 class="brand">Weather Telemetry</h1>
+      <div class="units" role="group" aria-label="Units">
+        <button type="button" id="unit-metric" data-unit="metric">°C</button>
+        <button type="button" id="unit-imperial" data-unit="imperial">°F</button>
+      </div>
+    </header>
+
+    <form id="search-form" class="search" autocomplete="off" role="search">
+      <div class="field">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="city-input" type="text" placeholder="Search any city, town or village" aria-label="Search for a place"
+               role="combobox" aria-expanded="false" aria-controls="suggestions" aria-autocomplete="list" required>
+        <ul id="suggestions" class="suggestions hidden" role="listbox"></ul>
+      </div>
+      <button type="button" id="locate" class="icon-btn" aria-label="Use my location" title="Use my location">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+      </button>
+      <button type="submit" class="go">Search</button>
+    </form>
+
+    <div id="recent" class="chips" aria-label="Recent searches"></div>
+
+    <div id="loader" class="loader hidden" role="status" aria-label="Loading weather"></div>
+    <p id="error" class="error hidden" role="alert"></p>
+
+    <section id="empty" class="empty">
+      <h2>Where to?</h2>
+      <p>Search any place in the world, down to small towns and villages. Add a state or country code if the name is common, like “Springfield, IL”.</p>
+      <div class="chips" id="quick"></div>
+    </section>
+
+    <section id="weather" class="hidden">
+      <div class="grid">
+        <article class="card hero">
+          <div class="hero-text">
+            <h2 id="city-name"></h2>
+            <p id="region" class="muted"></p>
+            <p id="local-time" class="muted"></p>
+            <p id="temp" class="temp"></p>
+            <p id="description" class="desc"></p>
+            <p id="hilo" class="muted"></p>
+          </div>
+          <img id="icon" class="hero-icon" alt="">
+        </article>
+
+        <div class="tiles" id="tiles"></div>
+      </div>
+
+      <h3>Next 24 hours</h3>
+      <div id="hourly" class="card hourly"></div>
+
+      <h3>5-day forecast</h3>
+      <div id="forecast" class="card days"></div>
+      <p id="updated" class="muted foot"></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+>>>>>>> 0c9c80d963500f07e4acb3193ca48c3668981377
+</html>
