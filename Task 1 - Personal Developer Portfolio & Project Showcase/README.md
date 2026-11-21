@@ -1,4 +1,4 @@
-Hosted Link in Github Pages : https://justin-saji.github.io/Datheon_Full_Stack_Web_Development_Internship/
+
 
 # Weather Telemetry
 
